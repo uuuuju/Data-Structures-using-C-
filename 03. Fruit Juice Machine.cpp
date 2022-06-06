@@ -99,7 +99,7 @@ private:
 						cost = 50;
 				}
 
-		dispenserType::dispenserType(int setNoOfItems, int setCost) 1
+		dispenserType::dispenserType(int setNoOfItems, int setCost) 
 				{
 			if (setNoOfItems >= 0)
 				numberOfItems = setNoOfItems;
@@ -169,27 +169,27 @@ int choice; //variable to hold the selection
 showSelection();
 cin >> choice;
 while (choice != 9)
-{
-switch (choice)
-{
-case 1:
-sellProduct(appleJuice, counter);
-break;
-case 2:
-sellProduct(orangeJuice, counter);
-break;
-case 3:
-sellProduct(mangoLassi, counter);
-break;
-case 4:
-sellProduct(fruitPunch, counter);
-break;
-default:
-cout << "Invalid selection." << endl;
-}//end switch
+	{
+	switch (choice)
+		{
+		case 1:
+		sellProduct(appleJuice, counter);
+		break;
+		case 2:
+		sellProduct(orangeJuice, counter);
+		break;
+		case 3:
+		sellProduct(mangoLassi, counter);
+		break;
+		case 4:
+		sellProduct(fruitPunch, counter);
+		break;
+		default:
+		cout << "Invalid selection." << endl;
+		}//end switch
 
-showSelection(); 
-cin >> choice;
-}//end while
+	showSelection(); 
+	cin >> choice;
+	}//end while
 return 0;
 }//end main
